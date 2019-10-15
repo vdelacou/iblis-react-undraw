@@ -1,0 +1,82 @@
+{
+  "name": "iblis-react-undraw",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "author": "DELACOURT Vincent <vincent.delacourt@gmail.com>",
+  "description": "React component library for undraw.co (901 illustrations)",
+  "contributors": [
+    {
+      "name": "DELACOURT Vincent",
+      "email": "vincent.delacourt@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vdelacou/iblis-react-undraw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vdelacou/iblis-react-undraw/issues"
+  },
+  "homepage": "https://github.com/vdelacou/iblis-react-undraw#readme",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx rbuild",
+    "test": "tsdx test --env=jsdom",
+    "tsc": "npm run delete && tsc",
+    "delete": "rimraf dist",
+    "lint": "tsdx lint",
+    "storybook": "start-storybook -p 9010 --docs",
+    "build-storybook": "build-storybook --docs -o ./docs"
+  },
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "latest",
+    "@storybook/addons": "latest",
+    "@storybook/preset-typescript": "latest",
+    "@storybook/react": "latest",
+    "@storybook/source-loader": "latest",
+    "@types/jest": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "awesome-typescript-loader": "latest",
+    "babel-loader": "latest",
+    "husky": "latest",
+    "react": "latest",
+    "react-docgen-typescript-loader": "latest",
+    "react-dom": "latest",
+    "rimraf": "latest",
+    "ts-loader": "latest",
+    "tsdx": "latest",
+    "tslib": "latest",
+    "tslint": "latest",
+    "tslint-config-prettier": "latest",
+    "tslint-config-standard": "latest",
+    "tslint-etc": "latest",
+    "tslint-react": "latest",
+    "tslint-react-hooks": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "babel-eslint": "latest",
+    "eslint": "latest",
+    "typescript": "3.5.3"
+  }
+}

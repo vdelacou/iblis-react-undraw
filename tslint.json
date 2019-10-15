@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "tslint:recommended",
+        "tslint-config-standard",
+        "tslint-etc",
+        "tslint-react",
+        "tslint-react-hooks",
+        "tslint-config-prettier"
+    ],
+    "rules": {
+        "object-literal-sort-keys": false
+    },
+    "jsRules": true
+}

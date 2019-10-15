@@ -1,0 +1,2708 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import {
+  Svg3DModeling,
+  SvgAboutMe,
+  SvgAboutUsPage,
+  SvgAbsorbedIn,
+  SvgAcceptRequest,
+  SvgAcceptTerms,
+  SvgAccessDenied,
+  SvgAccount,
+  SvgActiveSupport,
+  SvgActivityTracker,
+  SvgADayAtThePark,
+  SvgAddContent,
+  SvgAddFile,
+  SvgAddFiles,
+  SvgAddNotes,
+  SvgAddress,
+  SvgAddToCart,
+  SvgAddUser,
+  SvgAdjustments,
+  SvgAdventure,
+  SvgAfterTheRain,
+  SvgAgree,
+  SvgAgreement,
+  SvgAircraft,
+  SvgAirport,
+  SvgAirSupport,
+  SvgAlert,
+  SvgAlgolia,
+  SvgAlienScience,
+  SvgAllTheData,
+  SvgAMomentToRelax,
+  SvgAnalysis,
+  SvgAnalytics,
+  SvgAnalyze,
+  SvgAndroid,
+  SvgAnimating,
+  SvgApartmentRent,
+  SvgAppInstallation,
+  SvgAppreciation,
+  SvgAroundTheWorld,
+  SvgArrived,
+  SvgArt,
+  SvgArtificialIntelligence,
+  SvgArtist,
+  SvgArtLover,
+  SvgArtMuseum,
+  SvgAstronaut,
+  SvgAtThePark,
+  SvgAtWork,
+  SvgAudioConversation,
+  SvgAugmentedReality,
+  SvgAuthentication,
+  SvgAutumn,
+  SvgAwards,
+  SvgAWholeYear,
+  SvgBaby,
+  SvgBackHome,
+  SvgBackInTheDay,
+  SvgBackToSchool,
+  SvgBalloons,
+  SvgBarber,
+  SvgBasketball,
+  SvgBeach,
+  SvgBeerCelebration,
+  SvgBeforeDawn,
+  SvgBeginChat,
+  SvgBestPlace,
+  SvgBeTheHero,
+  SvgBibliophile,
+  SvgBiking,
+  SvgBirthdayCake,
+  SvgBitcoin,
+  SvgBitcoinP2P,
+  SvgBlankCanvas,
+  SvgBlogging,
+  SvgBlogPost,
+  SvgBlooming,
+  SvgBodyText,
+  SvgBooked,
+  SvgBooking,
+  SvgBookLover,
+  SvgBookmarks,
+  SvgBookReading,
+  SvgBooks,
+  SvgBookshelves,
+  SvgBrainstorming,
+  SvgBreakingBarriers,
+  SvgBroadcast,
+  SvgBrowserStats,
+  SvgBuddies,
+  SvgBuffer,
+  SvgBugFixing,
+  SvgBuilding,
+  SvgBuildingBlocks,
+  SvgBuildYourHome,
+  SvgBusinessAnalytics,
+  SvgBusinessDeal,
+  SvgBusinessman,
+  SvgBusinessPlan,
+  SvgBusinessShop,
+  SvgBusinesswoman,
+  SvgBusStop,
+  SvgBuyHouse,
+  SvgByMyCar,
+  SvgCalculator,
+  SvgCalendar,
+  SvgCalling,
+  SvgCamera,
+  SvgCampfire,
+  SvgCamping,
+  SvgCancel,
+  SvgCandidate,
+  SvgCardPostal,
+  SvgCareerDevelopment,
+  SvgCareerProgress,
+  SvgCautiousDog,
+  SvgCelebrating,
+  SvgCelebration,
+  SvgCertificate,
+  SvgCharacterDrawing,
+  SvgCharts,
+  SvgChasingLove,
+  SvgChat,
+  SvgChatting,
+  SvgCheckingBoxes,
+  SvgChecklist,
+  SvgChef,
+  SvgChildren,
+  SvgChilling,
+  SvgChoice,
+  SvgChoose,
+  SvgChoreList,
+  SvgChristmasStocking,
+  SvgChristmasTree,
+  SvgCircles,
+  SvgCircuit,
+  SvgCityDriver,
+  SvgCityGirl,
+  SvgCleanUp,
+  SvgClickHere,
+  SvgCloseTab,
+  SvgCloudDocs,
+  SvgCloudHosting,
+  SvgCloudSync,
+  SvgCodeReview,
+  SvgCodeTyping,
+  SvgCoding,
+  SvgCoffeeBreak,
+  SvgCollab,
+  SvgCollaboration,
+  SvgCollecting,
+  SvgCollection,
+  SvgComingHome,
+  SvgCommunity,
+  SvgCompleted,
+  SvgCompleteDesign,
+  SvgCompleteTask,
+  SvgCompleting,
+  SvgComposeMusic,
+  SvgComposition,
+  SvgConference,
+  SvgConferenceSpeaker,
+  SvgConfirmation,
+  SvgConfirmed,
+  SvgConnected,
+  SvgConnectedWorld,
+  SvgConnectingTeams,
+  SvgConnection,
+  SvgContactUs,
+  SvgContainerShip,
+  SvgContemplating,
+  SvgContent,
+  SvgContentCreator,
+  SvgContrast,
+  SvgControlPanel,
+  SvgConversation,
+  SvgConvert,
+  SvgCookieLove,
+  SvgCoolness,
+  SvgCountrySide,
+  SvgCouple,
+  SvgCoWorkers,
+  SvgCoWorking,
+  SvgCreate,
+  SvgCreation,
+  SvgCreationProcess,
+  SvgCreativeExperiment,
+  SvgCreativeProcess,
+  SvgCreativeTeam,
+  SvgCreativeThinking,
+  SvgCreativeWoman,
+  SvgCreativity,
+  SvgCreditCard,
+  SvgCreditCardPayment,
+  SvgCreditCardPayments,
+  SvgCryptoFlowers,
+  SvgCustomerSurvey,
+  SvgDarkAlley,
+  SvgDarkAnalytics,
+  SvgDashboard,
+  SvgData,
+  SvgDataPoints,
+  SvgDataReport,
+  SvgDataTrends,
+  SvgDecide,
+  SvgDeconstructed,
+  SvgDeliveries,
+  SvgDelivery,
+  SvgDeparting,
+  SvgDepi,
+  SvgDesignCommunity,
+  SvgDesigner,
+  SvgDesignerGirl,
+  SvgDesignerLife,
+  SvgDesignInspiration,
+  SvgDesignProcess,
+  SvgDesignSprint,
+  SvgDesignThinking,
+  SvgDesignTools,
+  SvgDestination,
+  SvgDestinations,
+  SvgDetailedAnalysis,
+  SvgDetailedExamination,
+  SvgDetailedInformation,
+  SvgDeveloperActivity,
+  SvgDevelopment,
+  SvgDevices,
+  SvgDiary,
+  SvgDifferentLove,
+  SvgDigitalCurrency,
+  SvgDigitalNomad,
+  SvgDirections,
+  SvgDiscount,
+  SvgDoctor,
+  SvgDoctors,
+  SvgDocuments,
+  SvgDogWalking,
+  SvgDollPlay,
+  SvgDomainNames,
+  SvgDone,
+  SvgDoneChecking,
+  SvgDownload,
+  SvgDrag,
+  SvgDreamer,
+  SvgDreamWorld,
+  SvgDroneDelivery,
+  SvgDroneRace,
+  SvgDuaLipa,
+  SvgEasterEggHunt,
+  SvgEatingTogether,
+  SvgEditable,
+  SvgEiffelTower,
+  SvgElectricCar,
+  SvgElements,
+  SvgEmailCampaign,
+  SvgEmailCapture,
+  SvgEmails,
+  SvgEmpty,
+  SvgEmptyCart,
+  SvgEnergizer,
+  SvgEnter,
+  SvgEnvelope,
+  SvgEnvironment,
+  SvgEscaping,
+  SvgEther,
+  SvgEthereum,
+  SvgEvents,
+  SvgEverydayDesign,
+  SvgEverydayLife,
+  SvgEverywhereTogether,
+  SvgExams,
+  SvgExperienceDesign,
+  SvgExperts,
+  SvgExplore,
+  SvgExploring,
+  SvgFall,
+  SvgFallIsComing,
+  SvgFans,
+  SvgFashionBlogging,
+  SvgFastCar,
+  SvgFastLoading,
+  SvgFatherhood,
+  SvgFeaturesOverview,
+  SvgFeedback,
+  SvgFeelingBlue,
+  SvgFeelingOfJoy,
+  SvgFemaleAvatar,
+  SvgFestivities,
+  SvgFileBundle,
+  SvgFileManager,
+  SvgFileSearching,
+  SvgFilesSent,
+  SvgFileSynchronization,
+  SvgFilingSystem,
+  SvgFilter,
+  SvgFinance,
+  SvgFinancialData,
+  SvgFingerprint,
+  SvgFinishLine,
+  SvgFireworks,
+  SvgFirmware,
+  SvgFishBowl,
+  SvgFishing,
+  SvgFitnessTracker,
+  SvgFloating,
+  SvgFlowers,
+  SvgFocus,
+  SvgFolder,
+  SvgFollowers,
+  SvgFollowing,
+  SvgFollowMeDrone,
+  SvgForever,
+  SvgForgotPassword,
+  SvgFormingIdeas,
+  SvgForSale,
+  SvgFreelancer,
+  SvgFreshNotification,
+  SvgFriendship,
+  SvgFriendsOnline,
+  SvgFrozenFigure,
+  SvgFunctions,
+  SvgFuturisticInterface,
+  SvgGameDay,
+  SvgGameWorld,
+  SvgGaming,
+  SvgGardening,
+  SvgGdpr,
+  SvgGettingCoffee,
+  SvgGift,
+  SvgGiftCard,
+  SvgGifts,
+  SvgGirlsJustWannaHaveFun,
+  SvgGoal,
+  SvgGoals,
+  SvgGoingUp,
+  SvgGoldenGateBridge,
+  SvgGolf,
+  SvgGoodDoggy,
+  SvgGoodTeam,
+  SvgGoogleAnalytics,
+  SvgGrades,
+  SvgGraduation,
+  SvgGrandma,
+  SvgGrandSlam,
+  SvgGravitas,
+  SvgGreekFreak,
+  SvgGroupChat,
+  SvgGroupHangout,
+  SvgGroupSelfie,
+  SvgGrowing,
+  SvgGrowthAnalytics,
+  SvgHackerMind,
+  SvgHamburger,
+  SvgHangOut,
+  SvgHappy2019,
+  SvgHappyBirthday,
+  SvgHappyFeeling,
+  SvgHappyNews,
+  SvgHappyWomenDay,
+  SvgHavingFun,
+  SvgHealthyHabit,
+  SvgHealthyLifestyle,
+  SvgHealthyOptions,
+  SvgHeartbroken,
+  SvgHeatmap,
+  SvgHello,
+  SvgHelpfulSign,
+  SvgHighFive,
+  SvgHiking,
+  SvgHire,
+  SvgHiring,
+  SvgHologram,
+  SvgHomeRun,
+  SvgHomeSettings,
+  SvgHooked,
+  SvgHorrorMovie,
+  SvgHouses,
+  SvgHouseSearching,
+  SvgICanFly,
+  SvgIceCream,
+  SvgIdeas,
+  SvgIdeasFlow,
+  SvgIdeation,
+  SvgImageFocus,
+  SvgImageFolder,
+  SvgImagePost,
+  SvgImages,
+  SvgImageUpload,
+  SvgImagination,
+  SvgInboxCleanup,
+  SvgInfluencer,
+  SvgInLove,
+  SvgInNoTime,
+  SvgInnovative,
+  SvgInProgress,
+  SvgInsert,
+  SvgInsertBlock,
+  SvgInspection,
+  SvgInspiration,
+  SvgInstantSupport,
+  SvgInstatAnalysis,
+  SvgInstructionManual,
+  SvgInSync,
+  SvgIntenseFeeling,
+  SvgInteractionDesign,
+  SvgInternetOnTheGo,
+  SvgInterview,
+  SvgInTheOffice,
+  SvgInThePool,
+  SvgInThought,
+  SvgIntoTheNight,
+  SvgInvest,
+  SvgInvesting,
+  SvgInvestment,
+  SvgInvite,
+  SvgJapan,
+  SvgJasonMask,
+  SvgJavaScriptFrameworks,
+  SvgJewelry,
+  SvgJobHunt,
+  SvgJogging,
+  SvgJourney,
+  SvgJoyride,
+  SvgJudge,
+  SvgJustSaying,
+  SvgKeyPoints,
+  SvgKnowledge,
+  SvgLandingPage,
+  SvgLaravelAndVue,
+  SvgLateAtNight,
+  SvgLaunching,
+  SvgLearning,
+  SvgLetter,
+  SvgLighthouse,
+  SvgLightTheFire,
+  SvgLikeDislike,
+  SvgLinkShortener,
+  SvgLiveCollaboration,
+  SvgLoading,
+  SvgLoadMore,
+  SvgLogin,
+  SvgLogistics,
+  SvgLogoDesign,
+  SvgLost,
+  SvgLove,
+  SvgLoveIsInTheAir,
+  SvgLovingIt,
+  SvgLovingStory,
+  SvgMail,
+  SvgMailbox,
+  SvgMailSent,
+  SvgMaintenance,
+  SvgMakeItRain,
+  SvgMakerLaunch,
+  SvgMakeupArtist,
+  SvgMakingArt,
+  SvgMaleAvatar,
+  SvgManageChats,
+  SvgMap,
+  SvgMapDark,
+  SvgMapLight,
+  SvgMarilyn,
+  SvgMarketing,
+  SvgMasterPlan,
+  SvgMathematics,
+  SvgMayTheForce,
+  SvgMediaPlayer,
+  SvgMedicine,
+  SvgMeditating,
+  SvgMeditation,
+  SvgMeeting,
+  SvgMemoryStorage,
+  SvgMention,
+  SvgMessages,
+  SvgMessageSent,
+  SvgMessaging,
+  SvgMessagingApp,
+  SvgMessagingFun,
+  SvgMessenger,
+  SvgMetrics,
+  SvgMillennialGirl,
+  SvgMindfulness,
+  SvgMindMap,
+  SvgMintTea,
+  SvgMissedChances,
+  SvgMissionImpossible,
+  SvgMobile,
+  SvgMobileApp,
+  SvgMobileApplication,
+  SvgMobileApps,
+  SvgMobileBrowsers,
+  SvgMobileImages,
+  SvgMobileLife,
+  SvgMobileLogin,
+  SvgMobileMarketing,
+  SvgMobilePayments,
+  SvgMobilePrototyping,
+  SvgMobileTesting,
+  SvgMobileUser,
+  SvgModernLife,
+  SvgModernProfessional,
+  SvgModernWoman,
+  SvgMomentToRemember,
+  SvgMonitor,
+  SvgMoonlight,
+  SvgMoreMusic,
+  SvgMornings,
+  SvgMotherhood,
+  SvgMovieNight,
+  SvgMovingForward,
+  SvgMultitasking,
+  SvgMusic,
+  SvgMyPassword,
+  SvgMyUniverse,
+  SvgNatureFun,
+  SvgNavigation,
+  SvgNerd,
+  SvgNetflix,
+  SvgNewIdeas,
+  SvgNewMessage,
+  SvgNews,
+  SvgNewsletter,
+  SvgNewspaper,
+  SvgNextOption,
+  SvgNightCalls,
+  SvgNinja,
+  SvgNoData,
+  SvgNotebook,
+  SvgNoted,
+  SvgNoteList,
+  SvgNotes,
+  SvgNotFound,
+  SvgNotify,
+  SvgOffRoad,
+  SvgOldDay,
+  SvgOmega,
+  SvgOnboarding,
+  SvgOnline,
+  SvgOnlineArt,
+  SvgOnlineBanking,
+  SvgOnlineCv,
+  SvgOnlineDiscussion,
+  SvgOnlineFriends,
+  SvgOnlineOrganizer,
+  SvgOnlinePage,
+  SvgOnlineParty,
+  SvgOnlineResume,
+  SvgOnlineShopping,
+  SvgOnlineWishes,
+  SvgOnlineWorld,
+  SvgOnTheOffice,
+  SvgOnTheWay,
+  SvgOpened,
+  SvgOpenSource,
+  SvgOperatingSystem,
+  SvgOptimizeImage,
+  SvgOptions,
+  SvgOrderConfirmed,
+  SvgOrdinaryDay,
+  SvgOrganizePhotos,
+  SvgOrganizeResume,
+  SvgOrganizingProjects,
+  SvgOutdoors,
+  SvgOuterSpace,
+  SvgPageNotFound,
+  SvgPairProgramming,
+  SvgPalette,
+  SvgParty,
+  SvgPassingBy,
+  SvgPayments,
+  SvgPedestrianCrossing,
+  SvgPenTool,
+  SvgPeople,
+  SvgPeopleSearch,
+  SvgPercentages,
+  SvgPersonalData,
+  SvgPersonalDocuments,
+  SvgPersonalInfo,
+  SvgPersonalInformation,
+  SvgPersonalization,
+  SvgPersonalNotebook,
+  SvgPersonalNotes,
+  SvgPersonalSettings,
+  SvgPersonalSite,
+  SvgPersonalText,
+  SvgPersonalTrainer,
+  SvgPersonalWebsite,
+  SvgPetAdoption,
+  SvgPhoneCall,
+  SvgPhoto,
+  SvgPhotoAlbum,
+  SvgPhotocopy,
+  SvgPhotos,
+  SvgPhotoSession,
+  SvgPhotoSharing,
+  SvgPicture,
+  SvgPieChart,
+  SvgPieGraph,
+  SvgPilates,
+  SvgPizzaSharing,
+  SvgPlainCreditCard,
+  SvgPlans,
+  SvgPlayfulCat,
+  SvgPlayingCards,
+  SvgPlayTime,
+  SvgPodcast,
+  SvgPodcastAudience,
+  SvgPolaroid,
+  SvgPopular,
+  SvgPortfolio,
+  SvgPortfolioUpdate,
+  SvgPortfolioWebsite,
+  SvgPost,
+  SvgPostingPhoto,
+  SvgPostOnline,
+  SvgPosts,
+  SvgPowerful,
+  SvgPredictiveAnalytics,
+  SvgPreferences,
+  SvgPreparation,
+  SvgPresentation,
+  SvgPressPlay,
+  SvgPrintingInvoices,
+  SvgPrioritise,
+  SvgPrivacyProtection,
+  SvgProblemSolving,
+  SvgProcess,
+  SvgProcessing,
+  SvgProductHunt,
+  SvgProductTeardown,
+  SvgProductTour,
+  SvgProfessor,
+  SvgProfile,
+  SvgProfileData,
+  SvgProfilePic,
+  SvgProgrammer,
+  SvgProgramming,
+  SvgProgressTracking,
+  SvgProjections,
+  SvgPrototypingProcess,
+  SvgPureLove,
+  SvgQaEngineers,
+  SvgQuestions,
+  SvgQueue,
+  SvgQuittingTime,
+  SvgRaining,
+  SvgReact,
+  SvgReading,
+  SvgReadingBook,
+  SvgReadingList,
+  SvgRealTimeSync,
+  SvgRecording,
+  SvgReferral,
+  SvgRefreshing,
+  SvgRegainFocus,
+  SvgRelaxation,
+  SvgRelaxingAtHome,
+  SvgReminder,
+  SvgReminders,
+  SvgReport,
+  SvgResponsive,
+  SvgResponsiveness,
+  SvgResult,
+  SvgResume,
+  SvgResumeFolder,
+  SvgRevenue,
+  SvgReview,
+  SvgRideABicycle,
+  SvgRightPlaces,
+  SvgRising,
+  SvgRoadSign,
+  SvgRobotics,
+  SvgRomanticGetaway,
+  SvgRunnerStart,
+  SvgRunningWild,
+  SvgSafe,
+  SvgSantaClaus,
+  SvgSavings,
+  SvgSchedule,
+  SvgScience,
+  SvgScooter,
+  SvgScrumBoard,
+  SvgSculpting,
+  SvgSearch,
+  SvgSearchEngines,
+  SvgSearching,
+  SvgSecureData,
+  SvgSecureServer,
+  SvgSecurity,
+  SvgSecurityOn,
+  SvgSegment,
+  SvgSegmentAnalysis,
+  SvgSegmentation,
+  SvgSelect,
+  SvgSelecting,
+  SvgSelection,
+  SvgSelfie,
+  SvgSelfieTime,
+  SvgServer,
+  SvgServerDown,
+  SvgServerStatus,
+  SvgServices,
+  SvgSettings,
+  SvgSetup,
+  SvgSetupAnalytics,
+  SvgSetupWizard,
+  SvgShare,
+  SvgShareOpinion,
+  SvgShopping,
+  SvgShortBio,
+  SvgSignalSearching,
+  SvgSiteContent,
+  SvgSiteStats,
+  SvgSkateboard,
+  SvgSkateboarding,
+  SvgSleepAnalysis,
+  SvgSlider,
+  SvgSmartHome,
+  SvgSmartResize,
+  SvgSmartwatch,
+  SvgSmileyFace,
+  SvgSnowman,
+  SvgSocialDashboard,
+  SvgSocialExpert,
+  SvgSocialGrowth,
+  SvgSocialIdeas,
+  SvgSocialInfluencer,
+  SvgSocialLife,
+  SvgSocialMedia,
+  SvgSocialNetworking,
+  SvgSocialNotifications,
+  SvgSocialShare,
+  SvgSocialStrategy,
+  SvgSocialThinking,
+  SvgSocialTree,
+  SvgSocialUpdate,
+  SvgSocialUser,
+  SvgSoftwareEngineer,
+  SvgSolutionMindset,
+  SvgSpecialEvent,
+  SvgSpecs,
+  SvgSpeechToText,
+  SvgSpeedTest,
+  SvgSpreadLove,
+  SvgSpreadsheets,
+  SvgStabilityBall,
+  SvgStarman,
+  SvgStartBuilding,
+  SvgStartled,
+  SvgStartupLife,
+  SvgStaticAssets,
+  SvgStatistics,
+  SvgStatusUpdate,
+  SvgStayingIn,
+  SvgSteps,
+  SvgStepToTheSun,
+  SvgStreetFood,
+  SvgStripePayments,
+  SvgStudying,
+  SvgSubscriber,
+  SvgSuburbs,
+  SvgSubway,
+  SvgSuccessfulPurchase,
+  SvgSummer,
+  SvgSunlight,
+  SvgSunnyDay,
+  SvgSuperhero,
+  SvgSuperThankYou,
+  SvgSuperWoman,
+  SvgSurfer,
+  SvgSurveillance,
+  SvgSwipe,
+  SvgSwipeProfiles,
+  SvgSync,
+  SvgSynchronize,
+  SvgTabs,
+  SvgTaken,
+  SvgTakingNotes,
+  SvgTakingSelfie,
+  SvgTarget,
+  SvgTask,
+  SvgTasting,
+  SvgTeacher,
+  SvgTeaching,
+  SvgTeam,
+  SvgTeamChat,
+  SvgTeamCollaboration,
+  SvgTeamPage,
+  SvgTeamSpirit,
+  SvgTeamWork,
+  SvgTeddyBear,
+  SvgTerms,
+  SvgTexting,
+  SvgThoughtProcess,
+  SvgThoughts,
+  SvgThroughTheDesert,
+  SvgThroughTheWindow,
+  SvgThrowDown,
+  SvgTimeline,
+  SvgTimeManagement,
+  SvgToDo,
+  SvgToDoList,
+  SvgTogether,
+  SvgToTheMoon,
+  SvgToTheStars,
+  SvgToyCar,
+  SvgTrackAndField,
+  SvgTransferFiles,
+  SvgTransferMoney,
+  SvgTravelBooking,
+  SvgTravelers,
+  SvgTraveling,
+  SvgTravelPlans,
+  SvgTreasure,
+  SvgTreeSwing,
+  SvgTrends,
+  SvgTrendyInterface,
+  SvgTrip,
+  SvgTrueFriends,
+  SvgTweetstorm,
+  SvgTypewriter,
+  SvgTyping,
+  SvgUnboxing,
+  SvgUnderConstruction,
+  SvgUnexpectedFriends,
+  SvgUnlock,
+  SvgUpdate,
+  SvgUpdated,
+  SvgUpdates,
+  SvgUpgrade,
+  SvgUpload,
+  SvgUploadImage,
+  SvgUploading,
+  SvgUpvote,
+  SvgUrbanDesign,
+  SvgUsabilityTesting,
+  SvgUserFlow,
+  SvgVault,
+  SvgVehicleSale,
+  SvgVersionControl,
+  SvgVideoCall,
+  SvgVideographer,
+  SvgVideoInfluencer,
+  SvgVideoStreaming,
+  SvgViralTweet,
+  SvgVirtualAssistant,
+  SvgVirtualReality,
+  SvgVisualData,
+  SvgVisualization,
+  SvgVoiceControl,
+  SvgVoiceInterface,
+  SvgVoid,
+  SvgVoting,
+  SvgVrChat,
+  SvgWaitingForYou,
+  SvgWalkDreaming,
+  SvgWalkingAround,
+  SvgWalkInTheCity,
+  SvgWallet,
+  SvgWallPost,
+  SvgWanderingMind,
+  SvgWarning,
+  SvgWeather,
+  SvgWeatherApp,
+  SvgWeatherNotification,
+  SvgWebDeveloper,
+  SvgWebDevelopment,
+  SvgWebDevices,
+  SvgWebsiteSetup,
+  SvgWedding,
+  SvgWelcome,
+  SvgWelcoming,
+  SvgWindows,
+  SvgWindowShopping,
+  SvgWindTurbine,
+  SvgWindyDay,
+  SvgWineTasting,
+  SvgWinners,
+  SvgWinterDesigner,
+  SvgWinterOlympics,
+  SvgWireframing,
+  SvgWishes,
+  SvgWishlist,
+  SvgWitch,
+  SvgWoman,
+  SvgWomenDay,
+  SvgWordOfMouth,
+  SvgWordpress,
+  SvgWorkChat,
+  SvgWorking,
+  SvgWorkingLate,
+  SvgWorkingOut,
+  SvgWorkingRemotely,
+  SvgWorkout,
+  SvgWorkTime,
+  SvgWorld,
+  SvgXmasSurprise,
+  SvgYacht,
+  SvgYoungAndHappy,
+  SvgYoutubeTutorial,
+  SvgZoomIn,
+} from '../dist';
+
+<Meta title="Iblis React Undraw" />
+
+### Svg3DModeling <Svg3DModeling/>
+
+### SvgAboutMe <SvgAboutMe/>
+
+### SvgAboutUsPage <SvgAboutUsPage/>
+
+### SvgAbsorbedIn <SvgAbsorbedIn/>
+
+### SvgAcceptRequest <SvgAcceptRequest/>
+
+### SvgAcceptTerms <SvgAcceptTerms/>
+
+### SvgAccessDenied <SvgAccessDenied/>
+
+### SvgAccount <SvgAccount/>
+
+### SvgActiveSupport <SvgActiveSupport/>
+
+### SvgActivityTracker <SvgActivityTracker/>
+
+### SvgADayAtThePark <SvgADayAtThePark/>
+
+### SvgAddContent <SvgAddContent/>
+
+### SvgAddFile <SvgAddFile/>
+
+### SvgAddFiles <SvgAddFiles/>
+
+### SvgAddNotes <SvgAddNotes/>
+
+### SvgAddress <SvgAddress/>
+
+### SvgAddToCart <SvgAddToCart/>
+
+### SvgAddUser <SvgAddUser/>
+
+### SvgAdjustments <SvgAdjustments/>
+
+### SvgAdventure <SvgAdventure/>
+
+### SvgAfterTheRain <SvgAfterTheRain/>
+
+### SvgAgree <SvgAgree/>
+
+### SvgAgreement <SvgAgreement/>
+
+### SvgAircraft <SvgAircraft/>
+
+### SvgAirport <SvgAirport/>
+
+### SvgAirSupport <SvgAirSupport/>
+
+### SvgAlert <SvgAlert/>
+
+### SvgAlgolia <SvgAlgolia/>
+
+### SvgAlienScience <SvgAlienScience/>
+
+### SvgAllTheData <SvgAllTheData/>
+
+### SvgAMomentToRelax <SvgAMomentToRelax/>
+
+### SvgAnalysis <SvgAnalysis/>
+
+### SvgAnalytics <SvgAnalytics/>
+
+### SvgAnalyze <SvgAnalyze/>
+
+### SvgAndroid <SvgAndroid/>
+
+### SvgAnimating <SvgAnimating/>
+
+### SvgApartmentRent <SvgApartmentRent/>
+
+### SvgAppInstallation <SvgAppInstallation/>
+
+### SvgAppreciation <SvgAppreciation/>
+
+### SvgAroundTheWorld <SvgAroundTheWorld/>
+
+### SvgArrived <SvgArrived/>
+
+### SvgArt <SvgArt/>
+
+### SvgArtificialIntelligence <SvgArtificialIntelligence/>
+
+### SvgArtist <SvgArtist/>
+
+### SvgArtLover <SvgArtLover/>
+
+### SvgArtMuseum <SvgArtMuseum/>
+
+### SvgAstronaut <SvgAstronaut/>
+
+### SvgAtThePark <SvgAtThePark/>
+
+### SvgAtWork <SvgAtWork/>
+
+### SvgAudioConversation <SvgAudioConversation/>
+
+### SvgAugmentedReality <SvgAugmentedReality/>
+
+### SvgAuthentication <SvgAuthentication/>
+
+### SvgAutumn <SvgAutumn/>
+
+### SvgAwards <SvgAwards/>
+
+### SvgAWholeYear <SvgAWholeYear/>
+
+### SvgBaby <SvgBaby/>
+
+### SvgBackHome <SvgBackHome/>
+
+### SvgBackInTheDay <SvgBackInTheDay/>
+
+### SvgBackToSchool <SvgBackToSchool/>
+
+### SvgBalloons <SvgBalloons/>
+
+### SvgBarber <SvgBarber/>
+
+### SvgBasketball <SvgBasketball/>
+
+### SvgBeach <SvgBeach/>
+
+### SvgBeerCelebration <SvgBeerCelebration/>
+
+### SvgBeforeDawn <SvgBeforeDawn/>
+
+### SvgBeginChat <SvgBeginChat/>
+
+### SvgBestPlace <SvgBestPlace/>
+
+### SvgBeTheHero <SvgBeTheHero/>
+
+### SvgBibliophile <SvgBibliophile/>
+
+### SvgBiking <SvgBiking/>
+
+### SvgBirthdayCake <SvgBirthdayCake/>
+
+### SvgBitcoin <SvgBitcoin/>
+
+### SvgBitcoinP2P <SvgBitcoinP2P/>
+
+### SvgBlankCanvas <SvgBlankCanvas/>
+
+### SvgBlogging <SvgBlogging/>
+
+### SvgBlogPost <SvgBlogPost/>
+
+### SvgBlooming <SvgBlooming/>
+
+### SvgBodyText <SvgBodyText/>
+
+### SvgBooked <SvgBooked/>
+
+### SvgBooking <SvgBooking/>
+
+### SvgBookLover <SvgBookLover/>
+
+### SvgBookmarks <SvgBookmarks/>
+
+### SvgBookReading <SvgBookReading/>
+
+### SvgBooks <SvgBooks/>
+
+### SvgBookshelves <SvgBookshelves/>
+
+### SvgBrainstorming <SvgBrainstorming/>
+
+### SvgBreakingBarriers <SvgBreakingBarriers/>
+
+### SvgBroadcast <SvgBroadcast/>
+
+### SvgBrowserStats <SvgBrowserStats/>
+
+### SvgBuddies <SvgBuddies/>
+
+### SvgBuffer <SvgBuffer/>
+
+### SvgBugFixing <SvgBugFixing/>
+
+### SvgBuilding <SvgBuilding/>
+
+### SvgBuildingBlocks <SvgBuildingBlocks/>
+
+### SvgBuildYourHome <SvgBuildYourHome/>
+
+### SvgBusinessAnalytics <SvgBusinessAnalytics/>
+
+### SvgBusinessDeal <SvgBusinessDeal/>
+
+### SvgBusinessman <SvgBusinessman/>
+
+### SvgBusinessPlan <SvgBusinessPlan/>
+
+### SvgBusinessShop <SvgBusinessShop/>
+
+### SvgBusinesswoman <SvgBusinesswoman/>
+
+### SvgBusStop <SvgBusStop/>
+
+### SvgBuyHouse <SvgBuyHouse/>
+
+### SvgByMyCar <SvgByMyCar/>
+
+### SvgCalculator <SvgCalculator/>
+
+### SvgCalendar <SvgCalendar/>
+
+### SvgCalling <SvgCalling/>
+
+### SvgCamera <SvgCamera/>
+
+### SvgCampfire <SvgCampfire/>
+
+### SvgCamping <SvgCamping/>
+
+### SvgCancel <SvgCancel/>
+
+### SvgCandidate <SvgCandidate/>
+
+### SvgCardPostal <SvgCardPostal/>
+
+### SvgCareerDevelopment <SvgCareerDevelopment/>
+
+### SvgCareerProgress <SvgCareerProgress/>
+
+### SvgCautiousDog <SvgCautiousDog/>
+
+### SvgCelebrating <SvgCelebrating/>
+
+### SvgCelebration <SvgCelebration/>
+
+### SvgCertificate <SvgCertificate/>
+
+### SvgCharacterDrawing <SvgCharacterDrawing/>
+
+### SvgCharts <SvgCharts/>
+
+### SvgChasingLove <SvgChasingLove/>
+
+### SvgChat <SvgChat/>
+
+### SvgChatting <SvgChatting/>
+
+### SvgCheckingBoxes <SvgCheckingBoxes/>
+
+### SvgChecklist <SvgChecklist/>
+
+### SvgChef <SvgChef/>
+
+### SvgChildren <SvgChildren/>
+
+### SvgChilling <SvgChilling/>
+
+### SvgChoice <SvgChoice/>
+
+### SvgChoose <SvgChoose/>
+
+### SvgChoreList <SvgChoreList/>
+
+### SvgChristmasStocking <SvgChristmasStocking/>
+
+### SvgChristmasTree <SvgChristmasTree/>
+
+### SvgCircles <SvgCircles/>
+
+### SvgCircuit <SvgCircuit/>
+
+### SvgCityDriver <SvgCityDriver/>
+
+### SvgCityGirl <SvgCityGirl/>
+
+### SvgCleanUp <SvgCleanUp/>
+
+### SvgClickHere <SvgClickHere/>
+
+### SvgCloseTab <SvgCloseTab/>
+
+### SvgCloudDocs <SvgCloudDocs/>
+
+### SvgCloudHosting <SvgCloudHosting/>
+
+### SvgCloudSync <SvgCloudSync/>
+
+### SvgCodeReview <SvgCodeReview/>
+
+### SvgCodeTyping <SvgCodeTyping/>
+
+### SvgCoding <SvgCoding/>
+
+### SvgCoffeeBreak <SvgCoffeeBreak/>
+
+### SvgCollab <SvgCollab/>
+
+### SvgCollaboration <SvgCollaboration/>
+
+### SvgCollecting <SvgCollecting/>
+
+### SvgCollection <SvgCollection/>
+
+### SvgComingHome <SvgComingHome/>
+
+### SvgCommunity <SvgCommunity/>
+
+### SvgCompleted <SvgCompleted/>
+
+### SvgCompleteDesign <SvgCompleteDesign/>
+
+### SvgCompleteTask <SvgCompleteTask/>
+
+### SvgCompleting <SvgCompleting/>
+
+### SvgComposeMusic <SvgComposeMusic/>
+
+### SvgComposition <SvgComposition/>
+
+### SvgConference <SvgConference/>
+
+### SvgConferenceSpeaker <SvgConferenceSpeaker/>
+
+### SvgConfirmation <SvgConfirmation/>
+
+### SvgConfirmed <SvgConfirmed/>
+
+### SvgConnected <SvgConnected/>
+
+### SvgConnectedWorld <SvgConnectedWorld/>
+
+### SvgConnectingTeams <SvgConnectingTeams/>
+
+### SvgConnection <SvgConnection/>
+
+### SvgContactUs <SvgContactUs/>
+
+### SvgContainerShip <SvgContainerShip/>
+
+### SvgContemplating <SvgContemplating/>
+
+### SvgContent <SvgContent/>
+
+### SvgContentCreator <SvgContentCreator/>
+
+### SvgContrast <SvgContrast/>
+
+### SvgControlPanel <SvgControlPanel/>
+
+### SvgConversation <SvgConversation/>
+
+### SvgConvert <SvgConvert/>
+
+### SvgCookieLove <SvgCookieLove/>
+
+### SvgCoolness <SvgCoolness/>
+
+### SvgCountrySide <SvgCountrySide/>
+
+### SvgCouple <SvgCouple/>
+
+### SvgCoWorkers <SvgCoWorkers/>
+
+### SvgCoWorking <SvgCoWorking/>
+
+### SvgCreate <SvgCreate/>
+
+### SvgCreation <SvgCreation/>
+
+### SvgCreationProcess <SvgCreationProcess/>
+
+### SvgCreativeExperiment <SvgCreativeExperiment/>
+
+### SvgCreativeProcess <SvgCreativeProcess/>
+
+### SvgCreativeTeam <SvgCreativeTeam/>
+
+### SvgCreativeThinking <SvgCreativeThinking/>
+
+### SvgCreativeWoman <SvgCreativeWoman/>
+
+### SvgCreativity <SvgCreativity/>
+
+### SvgCreditCard <SvgCreditCard/>
+
+### SvgCreditCardPayment <SvgCreditCardPayment/>
+
+### SvgCreditCardPayments <SvgCreditCardPayments/>
+
+### SvgCryptoFlowers <SvgCryptoFlowers/>
+
+### SvgCustomerSurvey <SvgCustomerSurvey/>
+
+### SvgDarkAlley <SvgDarkAlley/>
+
+### SvgDarkAnalytics <SvgDarkAnalytics/>
+
+### SvgDashboard <SvgDashboard/>
+
+### SvgData <SvgData/>
+
+### SvgDataPoints <SvgDataPoints/>
+
+### SvgDataReport <SvgDataReport/>
+
+### SvgDataTrends <SvgDataTrends/>
+
+### SvgDecide <SvgDecide/>
+
+### SvgDeconstructed <SvgDeconstructed/>
+
+### SvgDeliveries <SvgDeliveries/>
+
+### SvgDelivery <SvgDelivery/>
+
+### SvgDeparting <SvgDeparting/>
+
+### SvgDepi <SvgDepi/>
+
+### SvgDesignCommunity <SvgDesignCommunity/>
+
+### SvgDesigner <SvgDesigner/>
+
+### SvgDesignerGirl <SvgDesignerGirl/>
+
+### SvgDesignerLife <SvgDesignerLife/>
+
+### SvgDesignInspiration <SvgDesignInspiration/>
+
+### SvgDesignProcess <SvgDesignProcess/>
+
+### SvgDesignSprint <SvgDesignSprint/>
+
+### SvgDesignThinking <SvgDesignThinking/>
+
+### SvgDesignTools <SvgDesignTools/>
+
+### SvgDestination <SvgDestination/>
+
+### SvgDestinations <SvgDestinations/>
+
+### SvgDetailedAnalysis <SvgDetailedAnalysis/>
+
+### SvgDetailedExamination <SvgDetailedExamination/>
+
+### SvgDetailedInformation <SvgDetailedInformation/>
+
+### SvgDeveloperActivity <SvgDeveloperActivity/>
+
+### SvgDevelopment <SvgDevelopment/>
+
+### SvgDevices <SvgDevices/>
+
+### SvgDiary <SvgDiary/>
+
+### SvgDifferentLove <SvgDifferentLove/>
+
+### SvgDigitalCurrency <SvgDigitalCurrency/>
+
+### SvgDigitalNomad <SvgDigitalNomad/>
+
+### SvgDirections <SvgDirections/>
+
+### SvgDiscount <SvgDiscount/>
+
+### SvgDoctor <SvgDoctor/>
+
+### SvgDoctors <SvgDoctors/>
+
+### SvgDocuments <SvgDocuments/>
+
+### SvgDogWalking <SvgDogWalking/>
+
+### SvgDollPlay <SvgDollPlay/>
+
+### SvgDomainNames <SvgDomainNames/>
+
+### SvgDone <SvgDone/>
+
+### SvgDoneChecking <SvgDoneChecking/>
+
+### SvgDownload <SvgDownload/>
+
+### SvgDrag <SvgDrag/>
+
+### SvgDreamer <SvgDreamer/>
+
+### SvgDreamWorld <SvgDreamWorld/>
+
+### SvgDroneDelivery <SvgDroneDelivery/>
+
+### SvgDroneRace <SvgDroneRace/>
+
+### SvgDuaLipa <SvgDuaLipa/>
+
+### SvgEasterEggHunt <SvgEasterEggHunt/>
+
+### SvgEatingTogether <SvgEatingTogether/>
+
+### SvgEditable <SvgEditable/>
+
+### SvgEiffelTower <SvgEiffelTower/>
+
+### SvgElectricCar <SvgElectricCar/>
+
+### SvgElements <SvgElements/>
+
+### SvgEmailCampaign <SvgEmailCampaign/>
+
+### SvgEmailCapture <SvgEmailCapture/>
+
+### SvgEmails <SvgEmails/>
+
+### SvgEmpty <SvgEmpty/>
+
+### SvgEmptyCart <SvgEmptyCart/>
+
+### SvgEnergizer <SvgEnergizer/>
+
+### SvgEnter <SvgEnter/>
+
+### SvgEnvelope <SvgEnvelope/>
+
+### SvgEnvironment <SvgEnvironment/>
+
+### SvgEscaping <SvgEscaping/>
+
+### SvgEther <SvgEther/>
+
+### SvgEthereum <SvgEthereum/>
+
+### SvgEvents <SvgEvents/>
+
+### SvgEverydayDesign <SvgEverydayDesign/>
+
+### SvgEverydayLife <SvgEverydayLife/>
+
+### SvgEverywhereTogether <SvgEverywhereTogether/>
+
+### SvgExams <SvgExams/>
+
+### SvgExperienceDesign <SvgExperienceDesign/>
+
+### SvgExperts <SvgExperts/>
+
+### SvgExplore <SvgExplore/>
+
+### SvgExploring <SvgExploring/>
+
+### SvgFall <SvgFall/>
+
+### SvgFallIsComing <SvgFallIsComing/>
+
+### SvgFans <SvgFans/>
+
+### SvgFashionBlogging <SvgFashionBlogging/>
+
+### SvgFastCar <SvgFastCar/>
+
+### SvgFastLoading <SvgFastLoading/>
+
+### SvgFatherhood <SvgFatherhood/>
+
+### SvgFeaturesOverview <SvgFeaturesOverview/>
+
+### SvgFeedback <SvgFeedback/>
+
+### SvgFeelingBlue <SvgFeelingBlue/>
+
+### SvgFeelingOfJoy <SvgFeelingOfJoy/>
+
+### SvgFemaleAvatar <SvgFemaleAvatar/>
+
+### SvgFestivities <SvgFestivities/>
+
+### SvgFileBundle <SvgFileBundle/>
+
+### SvgFileManager <SvgFileManager/>
+
+### SvgFileSearching <SvgFileSearching/>
+
+### SvgFilesSent <SvgFilesSent/>
+
+### SvgFileSynchronization <SvgFileSynchronization/>
+
+### SvgFilingSystem <SvgFilingSystem/>
+
+### SvgFilter <SvgFilter/>
+
+### SvgFinance <SvgFinance/>
+
+### SvgFinancialData <SvgFinancialData/>
+
+### SvgFingerprint <SvgFingerprint/>
+
+### SvgFinishLine <SvgFinishLine/>
+
+### SvgFireworks <SvgFireworks/>
+
+### SvgFirmware <SvgFirmware/>
+
+### SvgFishBowl <SvgFishBowl/>
+
+### SvgFishing <SvgFishing/>
+
+### SvgFitnessTracker <SvgFitnessTracker/>
+
+### SvgFloating <SvgFloating/>
+
+### SvgFlowers <SvgFlowers/>
+
+### SvgFocus <SvgFocus/>
+
+### SvgFolder <SvgFolder/>
+
+### SvgFollowers <SvgFollowers/>
+
+### SvgFollowing <SvgFollowing/>
+
+### SvgFollowMeDrone <SvgFollowMeDrone/>
+
+### SvgForever <SvgForever/>
+
+### SvgForgotPassword <SvgForgotPassword/>
+
+### SvgFormingIdeas <SvgFormingIdeas/>
+
+### SvgForSale <SvgForSale/>
+
+### SvgFreelancer <SvgFreelancer/>
+
+### SvgFreshNotification <SvgFreshNotification/>
+
+### SvgFriendship <SvgFriendship/>
+
+### SvgFriendsOnline <SvgFriendsOnline/>
+
+### SvgFrozenFigure <SvgFrozenFigure/>
+
+### SvgFunctions <SvgFunctions/>
+
+### SvgFuturisticInterface <SvgFuturisticInterface/>
+
+### SvgGameDay <SvgGameDay/>
+
+### SvgGameWorld <SvgGameWorld/>
+
+### SvgGaming <SvgGaming/>
+
+### SvgGardening <SvgGardening/>
+
+### SvgGdpr <SvgGdpr/>
+
+### SvgGettingCoffee <SvgGettingCoffee/>
+
+### SvgGift <SvgGift/>
+
+### SvgGiftCard <SvgGiftCard/>
+
+### SvgGifts <SvgGifts/>
+
+### SvgGirlsJustWannaHaveFun <SvgGirlsJustWannaHaveFun/>
+
+### SvgGoal <SvgGoal/>
+
+### SvgGoals <SvgGoals/>
+
+### SvgGoingUp <SvgGoingUp/>
+
+### SvgGoldenGateBridge <SvgGoldenGateBridge/>
+
+### SvgGolf <SvgGolf/>
+
+### SvgGoodDoggy <SvgGoodDoggy/>
+
+### SvgGoodTeam <SvgGoodTeam/>
+
+### SvgGoogleAnalytics <SvgGoogleAnalytics/>
+
+### SvgGrades <SvgGrades/>
+
+### SvgGraduation <SvgGraduation/>
+
+### SvgGrandma <SvgGrandma/>
+
+### SvgGrandSlam <SvgGrandSlam/>
+
+### SvgGravitas <SvgGravitas/>
+
+### SvgGreekFreak <SvgGreekFreak/>
+
+### SvgGroupChat <SvgGroupChat/>
+
+### SvgGroupHangout <SvgGroupHangout/>
+
+### SvgGroupSelfie <SvgGroupSelfie/>
+
+### SvgGrowing <SvgGrowing/>
+
+### SvgGrowthAnalytics <SvgGrowthAnalytics/>
+
+### SvgHackerMind <SvgHackerMind/>
+
+### SvgHamburger <SvgHamburger/>
+
+### SvgHangOut <SvgHangOut/>
+
+### SvgHappy2019 <SvgHappy2019/>
+
+### SvgHappyBirthday <SvgHappyBirthday/>
+
+### SvgHappyFeeling <SvgHappyFeeling/>
+
+### SvgHappyNews <SvgHappyNews/>
+
+### SvgHappyWomenDay <SvgHappyWomenDay/>
+
+### SvgHavingFun <SvgHavingFun/>
+
+### SvgHealthyHabit <SvgHealthyHabit/>
+
+### SvgHealthyLifestyle <SvgHealthyLifestyle/>
+
+### SvgHealthyOptions <SvgHealthyOptions/>
+
+### SvgHeartbroken <SvgHeartbroken/>
+
+### SvgHeatmap <SvgHeatmap/>
+
+### SvgHello <SvgHello/>
+
+### SvgHelpfulSign <SvgHelpfulSign/>
+
+### SvgHighFive <SvgHighFive/>
+
+### SvgHiking <SvgHiking/>
+
+### SvgHire <SvgHire/>
+
+### SvgHiring <SvgHiring/>
+
+### SvgHologram <SvgHologram/>
+
+### SvgHomeRun <SvgHomeRun/>
+
+### SvgHomeSettings <SvgHomeSettings/>
+
+### SvgHooked <SvgHooked/>
+
+### SvgHorrorMovie <SvgHorrorMovie/>
+
+### SvgHouses <SvgHouses/>
+
+### SvgHouseSearching <SvgHouseSearching/>
+
+### SvgICanFly <SvgICanFly/>
+
+### SvgIceCream <SvgIceCream/>
+
+### SvgIdeas <SvgIdeas/>
+
+### SvgIdeasFlow <SvgIdeasFlow/>
+
+### SvgIdeation <SvgIdeation/>
+
+### SvgImageFocus <SvgImageFocus/>
+
+### SvgImageFolder <SvgImageFolder/>
+
+### SvgImagePost <SvgImagePost/>
+
+### SvgImages <SvgImages/>
+
+### SvgImageUpload <SvgImageUpload/>
+
+### SvgImagination <SvgImagination/>
+
+### SvgInboxCleanup <SvgInboxCleanup/>
+
+### SvgInfluencer <SvgInfluencer/>
+
+### SvgInLove <SvgInLove/>
+
+### SvgInNoTime <SvgInNoTime/>
+
+### SvgInnovative <SvgInnovative/>
+
+### SvgInProgress <SvgInProgress/>
+
+### SvgInsert <SvgInsert/>
+
+### SvgInsertBlock <SvgInsertBlock/>
+
+### SvgInspection <SvgInspection/>
+
+### SvgInspiration <SvgInspiration/>
+
+### SvgInstantSupport <SvgInstantSupport/>
+
+### SvgInstatAnalysis <SvgInstatAnalysis/>
+
+### SvgInstructionManual <SvgInstructionManual/>
+
+### SvgInSync <SvgInSync/>
+
+### SvgIntenseFeeling <SvgIntenseFeeling/>
+
+### SvgInteractionDesign <SvgInteractionDesign/>
+
+### SvgInternetOnTheGo <SvgInternetOnTheGo/>
+
+### SvgInterview <SvgInterview/>
+
+### SvgInTheOffice <SvgInTheOffice/>
+
+### SvgInThePool <SvgInThePool/>
+
+### SvgInThought <SvgInThought/>
+
+### SvgIntoTheNight <SvgIntoTheNight/>
+
+### SvgInvest <SvgInvest/>
+
+### SvgInvesting <SvgInvesting/>
+
+### SvgInvestment <SvgInvestment/>
+
+### SvgInvite <SvgInvite/>
+
+### SvgJapan <SvgJapan/>
+
+### SvgJasonMask <SvgJasonMask/>
+
+### SvgJavaScriptFrameworks <SvgJavaScriptFrameworks/>
+
+### SvgJewelry <SvgJewelry/>
+
+### SvgJobHunt <SvgJobHunt/>
+
+### SvgJogging <SvgJogging/>
+
+### SvgJourney <SvgJourney/>
+
+### SvgJoyride <SvgJoyride/>
+
+### SvgJudge <SvgJudge/>
+
+### SvgJustSaying <SvgJustSaying/>
+
+### SvgKeyPoints <SvgKeyPoints/>
+
+### SvgKnowledge <SvgKnowledge/>
+
+### SvgLandingPage <SvgLandingPage/>
+
+### SvgLaravelAndVue <SvgLaravelAndVue/>
+
+### SvgLateAtNight <SvgLateAtNight/>
+
+### SvgLaunching <SvgLaunching/>
+
+### SvgLearning <SvgLearning/>
+
+### SvgLetter <SvgLetter/>
+
+### SvgLighthouse <SvgLighthouse/>
+
+### SvgLightTheFire <SvgLightTheFire/>
+
+### SvgLikeDislike <SvgLikeDislike/>
+
+### SvgLinkShortener <SvgLinkShortener/>
+
+### SvgLiveCollaboration <SvgLiveCollaboration/>
+
+### SvgLoading <SvgLoading/>
+
+### SvgLoadMore <SvgLoadMore/>
+
+### SvgLogin <SvgLogin/>
+
+### SvgLogistics <SvgLogistics/>
+
+### SvgLogoDesign <SvgLogoDesign/>
+
+### SvgLost <SvgLost/>
+
+### SvgLove <SvgLove/>
+
+### SvgLoveIsInTheAir <SvgLoveIsInTheAir/>
+
+### SvgLovingIt <SvgLovingIt/>
+
+### SvgLovingStory <SvgLovingStory/>
+
+### SvgMail <SvgMail/>
+
+### SvgMailbox <SvgMailbox/>
+
+### SvgMailSent <SvgMailSent/>
+
+### SvgMaintenance <SvgMaintenance/>
+
+### SvgMakeItRain <SvgMakeItRain/>
+
+### SvgMakerLaunch <SvgMakerLaunch/>
+
+### SvgMakeupArtist <SvgMakeupArtist/>
+
+### SvgMakingArt <SvgMakingArt/>
+
+### SvgMaleAvatar <SvgMaleAvatar/>
+
+### SvgManageChats <SvgManageChats/>
+
+### SvgMap <SvgMap/>
+
+### SvgMapDark <SvgMapDark/>
+
+### SvgMapLight <SvgMapLight/>
+
+### SvgMarilyn <SvgMarilyn/>
+
+### SvgMarketing <SvgMarketing/>
+
+### SvgMasterPlan <SvgMasterPlan/>
+
+### SvgMathematics <SvgMathematics/>
+
+### SvgMayTheForce <SvgMayTheForce/>
+
+### SvgMediaPlayer <SvgMediaPlayer/>
+
+### SvgMedicine <SvgMedicine/>
+
+### SvgMeditating <SvgMeditating/>
+
+### SvgMeditation <SvgMeditation/>
+
+### SvgMeeting <SvgMeeting/>
+
+### SvgMemoryStorage <SvgMemoryStorage/>
+
+### SvgMention <SvgMention/>
+
+### SvgMessages <SvgMessages/>
+
+### SvgMessageSent <SvgMessageSent/>
+
+### SvgMessaging <SvgMessaging/>
+
+### SvgMessagingApp <SvgMessagingApp/>
+
+### SvgMessagingFun <SvgMessagingFun/>
+
+### SvgMessenger <SvgMessenger/>
+
+### SvgMetrics <SvgMetrics/>
+
+### SvgMillennialGirl <SvgMillennialGirl/>
+
+### SvgMindfulness <SvgMindfulness/>
+
+### SvgMindMap <SvgMindMap/>
+
+### SvgMintTea <SvgMintTea/>
+
+### SvgMissedChances <SvgMissedChances/>
+
+### SvgMissionImpossible <SvgMissionImpossible/>
+
+### SvgMobile <SvgMobile/>
+
+### SvgMobileApp <SvgMobileApp/>
+
+### SvgMobileApplication <SvgMobileApplication/>
+
+### SvgMobileApps <SvgMobileApps/>
+
+### SvgMobileBrowsers <SvgMobileBrowsers/>
+
+### SvgMobileImages <SvgMobileImages/>
+
+### SvgMobileLife <SvgMobileLife/>
+
+### SvgMobileLogin <SvgMobileLogin/>
+
+### SvgMobileMarketing <SvgMobileMarketing/>
+
+### SvgMobilePayments <SvgMobilePayments/>
+
+### SvgMobilePrototyping <SvgMobilePrototyping/>
+
+### SvgMobileTesting <SvgMobileTesting/>
+
+### SvgMobileUser <SvgMobileUser/>
+
+### SvgModernLife <SvgModernLife/>
+
+### SvgModernProfessional <SvgModernProfessional/>
+
+### SvgModernWoman <SvgModernWoman/>
+
+### SvgMomentToRemember <SvgMomentToRemember/>
+
+### SvgMonitor <SvgMonitor/>
+
+### SvgMoonlight <SvgMoonlight/>
+
+### SvgMoreMusic <SvgMoreMusic/>
+
+### SvgMornings <SvgMornings/>
+
+### SvgMotherhood <SvgMotherhood/>
+
+### SvgMovieNight <SvgMovieNight/>
+
+### SvgMovingForward <SvgMovingForward/>
+
+### SvgMultitasking <SvgMultitasking/>
+
+### SvgMusic <SvgMusic/>
+
+### SvgMyPassword <SvgMyPassword/>
+
+### SvgMyUniverse <SvgMyUniverse/>
+
+### SvgNatureFun <SvgNatureFun/>
+
+### SvgNavigation <SvgNavigation/>
+
+### SvgNerd <SvgNerd/>
+
+### SvgNetflix <SvgNetflix/>
+
+### SvgNewIdeas <SvgNewIdeas/>
+
+### SvgNewMessage <SvgNewMessage/>
+
+### SvgNews <SvgNews/>
+
+### SvgNewsletter <SvgNewsletter/>
+
+### SvgNewspaper <SvgNewspaper/>
+
+### SvgNextOption <SvgNextOption/>
+
+### SvgNightCalls <SvgNightCalls/>
+
+### SvgNinja <SvgNinja/>
+
+### SvgNoData <SvgNoData/>
+
+### SvgNotebook <SvgNotebook/>
+
+### SvgNoted <SvgNoted/>
+
+### SvgNoteList <SvgNoteList/>
+
+### SvgNotes <SvgNotes/>
+
+### SvgNotFound <SvgNotFound/>
+
+### SvgNotify <SvgNotify/>
+
+### SvgOffRoad <SvgOffRoad/>
+
+### SvgOldDay <SvgOldDay/>
+
+### SvgOmega <SvgOmega/>
+
+### SvgOnboarding <SvgOnboarding/>
+
+### SvgOnline <SvgOnline/>
+
+### SvgOnlineArt <SvgOnlineArt/>
+
+### SvgOnlineBanking <SvgOnlineBanking/>
+
+### SvgOnlineCv <SvgOnlineCv/>
+
+### SvgOnlineDiscussion <SvgOnlineDiscussion/>
+
+### SvgOnlineFriends <SvgOnlineFriends/>
+
+### SvgOnlineOrganizer <SvgOnlineOrganizer/>
+
+### SvgOnlinePage <SvgOnlinePage/>
+
+### SvgOnlineParty <SvgOnlineParty/>
+
+### SvgOnlineResume <SvgOnlineResume/>
+
+### SvgOnlineShopping <SvgOnlineShopping/>
+
+### SvgOnlineWishes <SvgOnlineWishes/>
+
+### SvgOnlineWorld <SvgOnlineWorld/>
+
+### SvgOnTheOffice <SvgOnTheOffice/>
+
+### SvgOnTheWay <SvgOnTheWay/>
+
+### SvgOpened <SvgOpened/>
+
+### SvgOpenSource <SvgOpenSource/>
+
+### SvgOperatingSystem <SvgOperatingSystem/>
+
+### SvgOptimizeImage <SvgOptimizeImage/>
+
+### SvgOptions <SvgOptions/>
+
+### SvgOrderConfirmed <SvgOrderConfirmed/>
+
+### SvgOrdinaryDay <SvgOrdinaryDay/>
+
+### SvgOrganizePhotos <SvgOrganizePhotos/>
+
+### SvgOrganizeResume <SvgOrganizeResume/>
+
+### SvgOrganizingProjects <SvgOrganizingProjects/>
+
+### SvgOutdoors <SvgOutdoors/>
+
+### SvgOuterSpace <SvgOuterSpace/>
+
+### SvgPageNotFound <SvgPageNotFound/>
+
+### SvgPairProgramming <SvgPairProgramming/>
+
+### SvgPalette <SvgPalette/>
+
+### SvgParty <SvgParty/>
+
+### SvgPassingBy <SvgPassingBy/>
+
+### SvgPayments <SvgPayments/>
+
+### SvgPedestrianCrossing <SvgPedestrianCrossing/>
+
+### SvgPenTool <SvgPenTool/>
+
+### SvgPeople <SvgPeople/>
+
+### SvgPeopleSearch <SvgPeopleSearch/>
+
+### SvgPercentages <SvgPercentages/>
+
+### SvgPersonalData <SvgPersonalData/>
+
+### SvgPersonalDocuments <SvgPersonalDocuments/>
+
+### SvgPersonalInfo <SvgPersonalInfo/>
+
+### SvgPersonalInformation <SvgPersonalInformation/>
+
+### SvgPersonalization <SvgPersonalization/>
+
+### SvgPersonalNotebook <SvgPersonalNotebook/>
+
+### SvgPersonalNotes <SvgPersonalNotes/>
+
+### SvgPersonalSettings <SvgPersonalSettings/>
+
+### SvgPersonalSite <SvgPersonalSite/>
+
+### SvgPersonalText <SvgPersonalText/>
+
+### SvgPersonalTrainer <SvgPersonalTrainer/>
+
+### SvgPersonalWebsite <SvgPersonalWebsite/>
+
+### SvgPetAdoption <SvgPetAdoption/>
+
+### SvgPhoneCall <SvgPhoneCall/>
+
+### SvgPhoto <SvgPhoto/>
+
+### SvgPhotoAlbum <SvgPhotoAlbum/>
+
+### SvgPhotocopy <SvgPhotocopy/>
+
+### SvgPhotos <SvgPhotos/>
+
+### SvgPhotoSession <SvgPhotoSession/>
+
+### SvgPhotoSharing <SvgPhotoSharing/>
+
+### SvgPicture <SvgPicture/>
+
+### SvgPieChart <SvgPieChart/>
+
+### SvgPieGraph <SvgPieGraph/>
+
+### SvgPilates <SvgPilates/>
+
+### SvgPizzaSharing <SvgPizzaSharing/>
+
+### SvgPlainCreditCard <SvgPlainCreditCard/>
+
+### SvgPlans <SvgPlans/>
+
+### SvgPlayfulCat <SvgPlayfulCat/>
+
+### SvgPlayingCards <SvgPlayingCards/>
+
+### SvgPlayTime <SvgPlayTime/>
+
+### SvgPodcast <SvgPodcast/>
+
+### SvgPodcastAudience <SvgPodcastAudience/>
+
+### SvgPolaroid <SvgPolaroid/>
+
+### SvgPopular <SvgPopular/>
+
+### SvgPortfolio <SvgPortfolio/>
+
+### SvgPortfolioUpdate <SvgPortfolioUpdate/>
+
+### SvgPortfolioWebsite <SvgPortfolioWebsite/>
+
+### SvgPost <SvgPost/>
+
+### SvgPostingPhoto <SvgPostingPhoto/>
+
+### SvgPostOnline <SvgPostOnline/>
+
+### SvgPosts <SvgPosts/>
+
+### SvgPowerful <SvgPowerful/>
+
+### SvgPredictiveAnalytics <SvgPredictiveAnalytics/>
+
+### SvgPreferences <SvgPreferences/>
+
+### SvgPreparation <SvgPreparation/>
+
+### SvgPresentation <SvgPresentation/>
+
+### SvgPressPlay <SvgPressPlay/>
+
+### SvgPrintingInvoices <SvgPrintingInvoices/>
+
+### SvgPrioritise <SvgPrioritise/>
+
+### SvgPrivacyProtection <SvgPrivacyProtection/>
+
+### SvgProblemSolving <SvgProblemSolving/>
+
+### SvgProcess <SvgProcess/>
+
+### SvgProcessing <SvgProcessing/>
+
+### SvgProductHunt <SvgProductHunt/>
+
+### SvgProductTeardown <SvgProductTeardown/>
+
+### SvgProductTour <SvgProductTour/>
+
+### SvgProfessor <SvgProfessor/>
+
+### SvgProfile <SvgProfile/>
+
+### SvgProfileData <SvgProfileData/>
+
+### SvgProfilePic <SvgProfilePic/>
+
+### SvgProgrammer <SvgProgrammer/>
+
+### SvgProgramming <SvgProgramming/>
+
+### SvgProgressTracking <SvgProgressTracking/>
+
+### SvgProjections <SvgProjections/>
+
+### SvgPrototypingProcess <SvgPrototypingProcess/>
+
+### SvgPureLove <SvgPureLove/>
+
+### SvgQaEngineers <SvgQaEngineers/>
+
+### SvgQuestions <SvgQuestions/>
+
+### SvgQueue <SvgQueue/>
+
+### SvgQuittingTime <SvgQuittingTime/>
+
+### SvgRaining <SvgRaining/>
+
+### SvgReact <SvgReact/>
+
+### SvgReading <SvgReading/>
+
+### SvgReadingBook <SvgReadingBook/>
+
+### SvgReadingList <SvgReadingList/>
+
+### SvgRealTimeSync <SvgRealTimeSync/>
+
+### SvgRecording <SvgRecording/>
+
+### SvgReferral <SvgReferral/>
+
+### SvgRefreshing <SvgRefreshing/>
+
+### SvgRegainFocus <SvgRegainFocus/>
+
+### SvgRelaxation <SvgRelaxation/>
+
+### SvgRelaxingAtHome <SvgRelaxingAtHome/>
+
+### SvgReminder <SvgReminder/>
+
+### SvgReminders <SvgReminders/>
+
+### SvgReport <SvgReport/>
+
+### SvgResponsive <SvgResponsive/>
+
+### SvgResponsiveness <SvgResponsiveness/>
+
+### SvgResult <SvgResult/>
+
+### SvgResume <SvgResume/>
+
+### SvgResumeFolder <SvgResumeFolder/>
+
+### SvgRevenue <SvgRevenue/>
+
+### SvgReview <SvgReview/>
+
+### SvgRideABicycle <SvgRideABicycle/>
+
+### SvgRightPlaces <SvgRightPlaces/>
+
+### SvgRising <SvgRising/>
+
+### SvgRoadSign <SvgRoadSign/>
+
+### SvgRobotics <SvgRobotics/>
+
+### SvgRomanticGetaway <SvgRomanticGetaway/>
+
+### SvgRunnerStart <SvgRunnerStart/>
+
+### SvgRunningWild <SvgRunningWild/>
+
+### SvgSafe <SvgSafe/>
+
+### SvgSantaClaus <SvgSantaClaus/>
+
+### SvgSavings <SvgSavings/>
+
+### SvgSchedule <SvgSchedule/>
+
+### SvgScience <SvgScience/>
+
+### SvgScooter <SvgScooter/>
+
+### SvgScrumBoard <SvgScrumBoard/>
+
+### SvgSculpting <SvgSculpting/>
+
+### SvgSearch <SvgSearch/>
+
+### SvgSearchEngines <SvgSearchEngines/>
+
+### SvgSearching <SvgSearching/>
+
+### SvgSecureData <SvgSecureData/>
+
+### SvgSecureServer <SvgSecureServer/>
+
+### SvgSecurity <SvgSecurity/>
+
+### SvgSecurityOn <SvgSecurityOn/>
+
+### SvgSegment <SvgSegment/>
+
+### SvgSegmentAnalysis <SvgSegmentAnalysis/>
+
+### SvgSegmentation <SvgSegmentation/>
+
+### SvgSelect <SvgSelect/>
+
+### SvgSelecting <SvgSelecting/>
+
+### SvgSelection <SvgSelection/>
+
+### SvgSelfie <SvgSelfie/>
+
+### SvgSelfieTime <SvgSelfieTime/>
+
+### SvgServer <SvgServer/>
+
+### SvgServerDown <SvgServerDown/>
+
+### SvgServerStatus <SvgServerStatus/>
+
+### SvgServices <SvgServices/>
+
+### SvgSettings <SvgSettings/>
+
+### SvgSetup <SvgSetup/>
+
+### SvgSetupAnalytics <SvgSetupAnalytics/>
+
+### SvgSetupWizard <SvgSetupWizard/>
+
+### SvgShare <SvgShare/>
+
+### SvgShareOpinion <SvgShareOpinion/>
+
+### SvgShopping <SvgShopping/>
+
+### SvgShortBio <SvgShortBio/>
+
+### SvgSignalSearching <SvgSignalSearching/>
+
+### SvgSiteContent <SvgSiteContent/>
+
+### SvgSiteStats <SvgSiteStats/>
+
+### SvgSkateboard <SvgSkateboard/>
+
+### SvgSkateboarding <SvgSkateboarding/>
+
+### SvgSleepAnalysis <SvgSleepAnalysis/>
+
+### SvgSlider <SvgSlider/>
+
+### SvgSmartHome <SvgSmartHome/>
+
+### SvgSmartResize <SvgSmartResize/>
+
+### SvgSmartwatch <SvgSmartwatch/>
+
+### SvgSmileyFace <SvgSmileyFace/>
+
+### SvgSnowman <SvgSnowman/>
+
+### SvgSocialDashboard <SvgSocialDashboard/>
+
+### SvgSocialExpert <SvgSocialExpert/>
+
+### SvgSocialGrowth <SvgSocialGrowth/>
+
+### SvgSocialIdeas <SvgSocialIdeas/>
+
+### SvgSocialInfluencer <SvgSocialInfluencer/>
+
+### SvgSocialLife <SvgSocialLife/>
+
+### SvgSocialMedia <SvgSocialMedia/>
+
+### SvgSocialNetworking <SvgSocialNetworking/>
+
+### SvgSocialNotifications <SvgSocialNotifications/>
+
+### SvgSocialShare <SvgSocialShare/>
+
+### SvgSocialStrategy <SvgSocialStrategy/>
+
+### SvgSocialThinking <SvgSocialThinking/>
+
+### SvgSocialTree <SvgSocialTree/>
+
+### SvgSocialUpdate <SvgSocialUpdate/>
+
+### SvgSocialUser <SvgSocialUser/>
+
+### SvgSoftwareEngineer <SvgSoftwareEngineer/>
+
+### SvgSolutionMindset <SvgSolutionMindset/>
+
+### SvgSpecialEvent <SvgSpecialEvent/>
+
+### SvgSpecs <SvgSpecs/>
+
+### SvgSpeechToText <SvgSpeechToText/>
+
+### SvgSpeedTest <SvgSpeedTest/>
+
+### SvgSpreadLove <SvgSpreadLove/>
+
+### SvgSpreadsheets <SvgSpreadsheets/>
+
+### SvgStabilityBall <SvgStabilityBall/>
+
+### SvgStarman <SvgStarman/>
+
+### SvgStartBuilding <SvgStartBuilding/>
+
+### SvgStartled <SvgStartled/>
+
+### SvgStartupLife <SvgStartupLife/>
+
+### SvgStaticAssets <SvgStaticAssets/>
+
+### SvgStatistics <SvgStatistics/>
+
+### SvgStatusUpdate <SvgStatusUpdate/>
+
+### SvgStayingIn <SvgStayingIn/>
+
+### SvgSteps <SvgSteps/>
+
+### SvgStepToTheSun <SvgStepToTheSun/>
+
+### SvgStreetFood <SvgStreetFood/>
+
+### SvgStripePayments <SvgStripePayments/>
+
+### SvgStudying <SvgStudying/>
+
+### SvgSubscriber <SvgSubscriber/>
+
+### SvgSuburbs <SvgSuburbs/>
+
+### SvgSubway <SvgSubway/>
+
+### SvgSuccessfulPurchase <SvgSuccessfulPurchase/>
+
+### SvgSummer <SvgSummer/>
+
+### SvgSunlight <SvgSunlight/>
+
+### SvgSunnyDay <SvgSunnyDay/>
+
+### SvgSuperhero <SvgSuperhero/>
+
+### SvgSuperThankYou <SvgSuperThankYou/>
+
+### SvgSuperWoman <SvgSuperWoman/>
+
+### SvgSurfer <SvgSurfer/>
+
+### SvgSurveillance <SvgSurveillance/>
+
+### SvgSwipe <SvgSwipe/>
+
+### SvgSwipeProfiles <SvgSwipeProfiles/>
+
+### SvgSync <SvgSync/>
+
+### SvgSynchronize <SvgSynchronize/>
+
+### SvgTabs <SvgTabs/>
+
+### SvgTaken <SvgTaken/>
+
+### SvgTakingNotes <SvgTakingNotes/>
+
+### SvgTakingSelfie <SvgTakingSelfie/>
+
+### SvgTarget <SvgTarget/>
+
+### SvgTask <SvgTask/>
+
+### SvgTasting <SvgTasting/>
+
+### SvgTeacher <SvgTeacher/>
+
+### SvgTeaching <SvgTeaching/>
+
+### SvgTeam <SvgTeam/>
+
+### SvgTeamChat <SvgTeamChat/>
+
+### SvgTeamCollaboration <SvgTeamCollaboration/>
+
+### SvgTeamPage <SvgTeamPage/>
+
+### SvgTeamSpirit <SvgTeamSpirit/>
+
+### SvgTeamWork <SvgTeamWork/>
+
+### SvgTeddyBear <SvgTeddyBear/>
+
+### SvgTerms <SvgTerms/>
+
+### SvgTexting <SvgTexting/>
+
+### SvgThoughtProcess <SvgThoughtProcess/>
+
+### SvgThoughts <SvgThoughts/>
+
+### SvgThroughTheDesert <SvgThroughTheDesert/>
+
+### SvgThroughTheWindow <SvgThroughTheWindow/>
+
+### SvgThrowDown <SvgThrowDown/>
+
+### SvgTimeline <SvgTimeline/>
+
+### SvgTimeManagement <SvgTimeManagement/>
+
+### SvgToDo <SvgToDo/>
+
+### SvgToDoList <SvgToDoList/>
+
+### SvgTogether <SvgTogether/>
+
+### SvgToTheMoon <SvgToTheMoon/>
+
+### SvgToTheStars <SvgToTheStars/>
+
+### SvgToyCar <SvgToyCar/>
+
+### SvgTrackAndField <SvgTrackAndField/>
+
+### SvgTransferFiles <SvgTransferFiles/>
+
+### SvgTransferMoney <SvgTransferMoney/>
+
+### SvgTravelBooking <SvgTravelBooking/>
+
+### SvgTravelers <SvgTravelers/>
+
+### SvgTraveling <SvgTraveling/>
+
+### SvgTravelPlans <SvgTravelPlans/>
+
+### SvgTreasure <SvgTreasure/>
+
+### SvgTreeSwing <SvgTreeSwing/>
+
+### SvgTrends <SvgTrends/>
+
+### SvgTrendyInterface <SvgTrendyInterface/>
+
+### SvgTrip <SvgTrip/>
+
+### SvgTrueFriends <SvgTrueFriends/>
+
+### SvgTweetstorm <SvgTweetstorm/>
+
+### SvgTypewriter <SvgTypewriter/>
+
+### SvgTyping <SvgTyping/>
+
+### SvgUnboxing <SvgUnboxing/>
+
+### SvgUnderConstruction <SvgUnderConstruction/>
+
+### SvgUnexpectedFriends <SvgUnexpectedFriends/>
+
+### SvgUnlock <SvgUnlock/>
+
+### SvgUpdate <SvgUpdate/>
+
+### SvgUpdated <SvgUpdated/>
+
+### SvgUpdates <SvgUpdates/>
+
+### SvgUpgrade <SvgUpgrade/>
+
+### SvgUpload <SvgUpload/>
+
+### SvgUploadImage <SvgUploadImage/>
+
+### SvgUploading <SvgUploading/>
+
+### SvgUpvote <SvgUpvote/>
+
+### SvgUrbanDesign <SvgUrbanDesign/>
+
+### SvgUsabilityTesting <SvgUsabilityTesting/>
+
+### SvgUserFlow <SvgUserFlow/>
+
+### SvgVault <SvgVault/>
+
+### SvgVehicleSale <SvgVehicleSale/>
+
+### SvgVersionControl <SvgVersionControl/>
+
+### SvgVideoCall <SvgVideoCall/>
+
+### SvgVideographer <SvgVideographer/>
+
+### SvgVideoInfluencer <SvgVideoInfluencer/>
+
+### SvgVideoStreaming <SvgVideoStreaming/>
+
+### SvgViralTweet <SvgViralTweet/>
+
+### SvgVirtualAssistant <SvgVirtualAssistant/>
+
+### SvgVirtualReality <SvgVirtualReality/>
+
+### SvgVisualData <SvgVisualData/>
+
+### SvgVisualization <SvgVisualization/>
+
+### SvgVoiceControl <SvgVoiceControl/>
+
+### SvgVoiceInterface <SvgVoiceInterface/>
+
+### SvgVoid <SvgVoid/>
+
+### SvgVoting <SvgVoting/>
+
+### SvgVrChat <SvgVrChat/>
+
+### SvgWaitingForYou <SvgWaitingForYou/>
+
+### SvgWalkDreaming <SvgWalkDreaming/>
+
+### SvgWalkingAround <SvgWalkingAround/>
+
+### SvgWalkInTheCity <SvgWalkInTheCity/>
+
+### SvgWallet <SvgWallet/>
+
+### SvgWallPost <SvgWallPost/>
+
+### SvgWanderingMind <SvgWanderingMind/>
+
+### SvgWarning <SvgWarning/>
+
+### SvgWeather <SvgWeather/>
+
+### SvgWeatherApp <SvgWeatherApp/>
+
+### SvgWeatherNotification <SvgWeatherNotification/>
+
+### SvgWebDeveloper <SvgWebDeveloper/>
+
+### SvgWebDevelopment <SvgWebDevelopment/>
+
+### SvgWebDevices <SvgWebDevices/>
+
+### SvgWebsiteSetup <SvgWebsiteSetup/>
+
+### SvgWedding <SvgWedding/>
+
+### SvgWelcome <SvgWelcome/>
+
+### SvgWelcoming <SvgWelcoming/>
+
+### SvgWindows <SvgWindows/>
+
+### SvgWindowShopping <SvgWindowShopping/>
+
+### SvgWindTurbine <SvgWindTurbine/>
+
+### SvgWindyDay <SvgWindyDay/>
+
+### SvgWineTasting <SvgWineTasting/>
+
+### SvgWinners <SvgWinners/>
+
+### SvgWinterDesigner <SvgWinterDesigner/>
+
+### SvgWinterOlympics <SvgWinterOlympics/>
+
+### SvgWireframing <SvgWireframing/>
+
+### SvgWishes <SvgWishes/>
+
+### SvgWishlist <SvgWishlist/>
+
+### SvgWitch <SvgWitch/>
+
+### SvgWoman <SvgWoman/>
+
+### SvgWomenDay <SvgWomenDay/>
+
+### SvgWordOfMouth <SvgWordOfMouth/>
+
+### SvgWordpress <SvgWordpress/>
+
+### SvgWorkChat <SvgWorkChat/>
+
+### SvgWorking <SvgWorking/>
+
+### SvgWorkingLate <SvgWorkingLate/>
+
+### SvgWorkingOut <SvgWorkingOut/>
+
+### SvgWorkingRemotely <SvgWorkingRemotely/>
+
+### SvgWorkout <SvgWorkout/>
+
+### SvgWorkTime <SvgWorkTime/>
+
+### SvgWorld <SvgWorld/>
+
+### SvgXmasSurprise <SvgXmasSurprise/>
+
+### SvgYacht <SvgYacht/>
+
+### SvgYoungAndHappy <SvgYoungAndHappy/>
+
+### SvgYoutubeTutorial <SvgYoutubeTutorial/>
+
+### SvgZoomIn <SvgZoomIn/>
