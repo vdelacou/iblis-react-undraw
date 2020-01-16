@@ -1,6 +1,6 @@
 # Iblis React Undraw
 
-_**React component library for undraw.co (901 illustrations)**_
+_**React component library for undraw.co (1028 illustrations)**_
 
 [![NPM version](https://badge.fury.io/js/iblis-react-undraw.svg)](https://www.npmjs.com/package/iblis-react-undraw)
 
@@ -91,6 +91,13 @@ Build the library
 
 `npm run tsc`
 
+or
+
+```
+export NODE_OPTIONS=--max_old_space_size=4096
+npm run build
+```
+
 ## Contribute
 
 1.  [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
@@ -111,4 +118,4 @@ Build the library
 
 ## License
 
-Please, refer to LICENSE file
+Please, refer to [LICENSE](https://github.com/vdelacou/iblis-react-native-undraw/blob/master/LICENSE) file

@@ -1,9 +1,9 @@
 {
   "name": "iblis-react-undraw",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "Apache-2.0",
   "author": "DELACOURT Vincent <vincent.delacourt@gmail.com>",
-  "description": "React component library for undraw.co (901 illustrations)",
+  "description": "React component library for undraw.co (1028 illustrations)",
   "contributors": [
     {
       "name": "DELACOURT Vincent",
@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx rbuild",
+    "build": "tsdx build",
     "test": "tsdx test --env=jsdom",
     "tsc": "npm run delete && tsc",
     "delete": "rimraf dist",

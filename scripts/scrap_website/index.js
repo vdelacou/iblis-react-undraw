@@ -1,8 +1,10 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-core');
 const fs = require('fs');
+const axios = require("axios");
 const request = require('request');
 const changeCase = require('change-case');
 const scrollPageToBottom = require('puppeteer-autoscroll-down');
+const chromeLauncher = require('chrome-launcher');
 
 function download(uri, filename, callback) {
   request.head(uri, function(_err, _res, _body) {
@@ -15,9 +17,13 @@ function download(uri, filename, callback) {
 const url = 'https://undraw.co/illustrations';
 
 const main = async () => {
-  const browser = await puppeteer.launch({
-    headless: false, // true
+  const chrome = await chromeLauncher.launch({
+    chromeFlags: ['']
   });
+  const response = await axios.get(`http://localhost:${chrome.port}/json/version`);
+  const { webSocketDebuggerUrl } = response.data;
+  // Connecting the instance using `browserWSEndpoint`
+  const browser = await puppeteer.connect({ browserWSEndpoint: webSocketDebuggerUrl });
 
   const page = await browser.newPage();
 
