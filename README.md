@@ -1,6 +1,6 @@
 # Iblis React Undraw
 
-_**React component library for undraw.co (1028 illustrations)**_
+_**React component library for undraw.co (1263 illustrations)**_
 
 [![NPM version](https://badge.fury.io/js/iblis-react-undraw.svg)](https://www.npmjs.com/package/iblis-react-undraw)
 
