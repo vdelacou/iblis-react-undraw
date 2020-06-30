@@ -1,18 +1,10 @@
 const puppeteer = require('puppeteer-core');
-const fs = require('fs');
 const axios = require("axios");
+const fs = require('fs');
 const request = require('request');
 const changeCase = require('change-case');
 const scrollPageToBottom = require('puppeteer-autoscroll-down');
 const chromeLauncher = require('chrome-launcher');
-
-function download(uri, filename, callback) {
-  request.head(uri, function(_err, _res, _body) {
-    request(uri)
-      .pipe(fs.createWriteStream(filename))
-      .on('close', callback);
-  });
-}
 
 const url = 'https://undraw.co/illustrations';
 
@@ -22,14 +14,14 @@ const main = async () => {
   });
   const response = await axios.get(`http://localhost:${chrome.port}/json/version`);
   const { webSocketDebuggerUrl } = response.data;
+
   // Connecting the instance using `browserWSEndpoint`
   const browser = await puppeteer.connect({ browserWSEndpoint: webSocketDebuggerUrl });
-
   const page = await browser.newPage();
 
   page.setDefaultTimeout(60000);
 
-  await page.setViewport({ width: 1366, height: 768 });
+  await page.setViewport({ width: 1566, height: 768 });
 
   await page.goto(url, { waitUntil: 'networkidle0' });
 
@@ -38,20 +30,19 @@ const main = async () => {
   console.log('Page loaded');
 
   const images_url = await page.evaluate(() =>
-    Array.from(document.getElementsByClassName('item__image'), element => {
-      return { url: element.getAttribute('src'), name: element.getAttribute('alt') };
+    Array.from(document.getElementsByClassName('gridItem'), element => {
+      if(element.firstElementChild && element.lastElementChild ){
+        element.firstElementChild.firstElementChild.removeAttribute('class')
+        return { svg: element.firstElementChild.innerHTML, name: element.lastElementChild.textContent };
+      }
     })
   );
 
-  console.log('Result: ' + JSON.stringify(images_url));
-
-  images_url.forEach(imageUrl => {
-    download(imageUrl.url, `./undraw/${changeCase.pascalCase(imageUrl.name)}.svg`, function() {
-      console.log(`Image ${changeCase.pascalCase(imageUrl.name)} downloaded`);
-    });
+  images_url.filter(value => !!value).forEach(imageUrl => {
+    fs.writeFileSync(`./undraw/${changeCase.pascalCase(imageUrl.name)}.svg`, imageUrl.svg)
   });
 
-  console.log(`${images_url.length} Image downloaded`);
+  console.log(`${images_url.filter(value => !!value).length} Image downloaded`);
 
   await browser.close();
 };
