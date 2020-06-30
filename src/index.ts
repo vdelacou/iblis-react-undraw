@@ -1261,3 +1261,5 @@ export { SvgYoga } from './components/Yoga';
 export { SvgYoungAndHappy } from './components/YoungAndHappy';
 export { SvgYoutubeTutorial } from './components/YoutubeTutorial';
 export { SvgZoomIn } from './components/ZoomIn';
+//
+export { IIblisReactUndrawProps } from './iblis_react_undraw_props';
